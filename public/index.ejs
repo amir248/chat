@@ -12,6 +12,41 @@
             <h1><%= title %></h1>
             <p><%= text %></p>
         </article>
+        <section>
+            <!--
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            Here commentsBlock!
+            XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          -->
+          <div id="comments" style="width:100%;max-width:100%"></div>
+          <a href="https://super.qucu.ru/comments/" style="font-size: 17px;">https://super.qucu.ru/comments/</a>
+          <script type="text/javascript">
+          const site={
+            origin: `${window.location.hash}`,
+            referrer: `${window.location.pathname}`
+          }
+          const importantBag={id:"nasoberu",site:window.location};
+          // const id='nasoberu';// important!!!
+          const script =document.createElement('script');
+          const url ='https://qucu.ru/allow-cors';
+          async function goComments(){
+            await fetch(url,{
+              origin:site.origin,
+              method: "GET",
+              referrer: site.referrer,
+              referrerPolicy: "origin-when-cross-origin",
+              mode:"cors",
+              credentials: "same-origin",
+              cache: "no-store",
+            }).then(response=>response.text()).then(result=>{
+              document.querySelector('#comments').append(script);
+              var oK = document.querySelector('#comments > script');
+              oK.innerHTML=result;
+            });
+          };
+          setTimeout(()=>goComments(),3000);
+          </script>
+          </section>
     </main>
 </body>
 </html>
