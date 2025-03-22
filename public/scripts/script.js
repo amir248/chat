@@ -1,5 +1,5 @@
 //const puto3='https://qucu.ru/comments/'+`${importantBag.id}`+'.json/post';
- const puto3='https://super.qucu.ru/'+`${importantBag.id}`+'.json';
+ const puto3='https://comments.qucu.ru/'+`${importantBag.id}`+'.json';
 // const puto3='https://qucu.ru/comments/'+`${importantBag.id}`+'.json/post';
 const form=document.createElement('form');
 form.setAttribute('action',puto3);
@@ -85,7 +85,7 @@ document.querySelector('#message').value='';
 console.log(importantBag.id);
 
 //const json ='https://qucu.ru/comments/json/'+`${importantBag.id}`+'.json/allow-cors';
-const json ='https://super.qucu.ru/'+`${importantBag.id}`;
+const json ='https://comments.qucu.ru/'+`${importantBag.id}`;
 
 // amir248.github.io/
 async function comments(){
