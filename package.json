@@ -1,0 +1,24 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "chat with nodejs and js free and forever",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amir248/chat.git"
+  },
+  "keywords": [
+    "chat",
+    "on",
+    "node.js"
+  ],
+  "author": "Amir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amir248/chat/issues"
+  },
+  "homepage": "https://github.com/amir248/chat#readme"
+}
