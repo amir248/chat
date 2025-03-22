@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/amir248/chat/issues"
   },
-  "homepage": "https://github.com/amir248/chat#readme"
+  "homepage": "https://github.com/amir248/chat#readme",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
 }
