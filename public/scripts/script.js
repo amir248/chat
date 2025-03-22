@@ -1,5 +1,5 @@
 //const puto3='https://qucu.ru/comments/'+`${importantBag.id}`+'.json/post';
- const puto3='https://comments.qucu.ru/'+`${importantBag.id}`+'.json';
+ const puto3='http://localhost:3000/'+`${importantBag.id}`+'.json';
 // const puto3='https://qucu.ru/comments/'+`${importantBag.id}`+'.json/post';
 const form=document.createElement('form');
 form.setAttribute('action',puto3);
@@ -85,18 +85,18 @@ document.querySelector('#message').value='';
 console.log(importantBag.id);
 
 //const json ='https://qucu.ru/comments/json/'+`${importantBag.id}`+'.json/allow-cors';
-const json ='https://comments.qucu.ru/'+`${importantBag.id}`;
+const json ='http://localhost:3000/'+`${importantBag.id}`;
 
 // amir248.github.io/
 async function comments(){
   await fetch(json,{
-    // origin: "https://nasobe.ru/",
+    origin: "http://localhost:3000",
     method: "POST",
     headers: {
     'Content-Type': 'application/json; charset=UTF-8'
   },
   // body: undefined,
-    // referrer: "https://nasobe.ru/",
+    referrer: "http://localhost:3000/",
     referrerPolicy: "origin-when-cross-origin",
     mode:"cors", //CORS - разрешены политикой cors
     credentials: "omit",
