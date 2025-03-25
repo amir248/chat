@@ -14,7 +14,7 @@ const fs = require('node:fs');
 const registerUrl=['https://amir248.github.io/chat/','https://comments.qucu.ru','http://192.168.1.103','http://192.168.1.104:80/','http://192.168.1.103:3000/','https://amir248.github.io','http://localhost'];
 // app.options('*', cors());
 app.use(cors({
-  origin: "*",
+  origin: registerUrl,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   // preflightContinue: false,
   optionsSuccessStatus: 204
