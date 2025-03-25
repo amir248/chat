@@ -11,7 +11,7 @@ const fs = require('node:fs');
 //******************************************************************************************************************
 // ----------------------------BOX comments system------------
 // *******************************************************************************************************************
-const registerUrl=['88.204.56.164','https://comments.qucu.ru','http://192.168.1.103','http://192.168.1.104:80/','http://192.168.1.103:3000/','https://amir248.github.io','http://localhost'];
+const registerUrl=['https://amir248.github.io/chat/','https://comments.qucu.ru','http://192.168.1.103','http://192.168.1.104:80/','http://192.168.1.103:3000/','https://amir248.github.io','http://localhost'];
 // app.options('*', cors());
 app.use(cors({
   origin: "*",
