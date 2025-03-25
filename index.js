@@ -484,8 +484,8 @@ comments(17);
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 app.get('/', (request, response) => {
   response.render("index",{
-    title: 'oK',
-    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, harum id? Recusandae facere, dolor quos voluptas voluptatibus ipsa! Officiis provident deserunt ad culpa ducimus eius earum consequuntur praesentium ipsum qui?'
+    title: 'Super comment Sustem',
+    text: 'It\'s commetnt sustem/ that free and forever!'
   });
 })
 
