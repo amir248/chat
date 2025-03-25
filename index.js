@@ -485,7 +485,7 @@ comments(17);
 app.get('/', (request, response) => {
   response.render("index",{
     title: 'Super comment Sustem',
-    text: 'It\'s commetnt sustem/ that free and forever! <a href="https://github.com/amir248/chat">gitHub width this scripts</a>'
+    text: 'It\'s commetnt sustem/ that free and forever! '
   });
 })
 
