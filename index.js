@@ -487,8 +487,13 @@ app.get('/', (request, response) => {
     title: 'Super comment Sustem',
     text: 'It\'s commetnt sustem/ that free and forever! '
   });
-})
-
+});
+app.get('/comments', (request, response) => {
+  response.render("index",{
+    title: 'Super comment Sustem',
+    text: 'It\'s commetnt sustem/ that free and forever! '
+  });
+});
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

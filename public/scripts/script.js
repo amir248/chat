@@ -64,7 +64,7 @@ var requestOptions = {
   cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
   credentials: "omit", // include, *same-origin, omit
   redirect: "follow", // manual, *follow, error
-  referrerPolicy: "origin-when-cross-origin", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+  referrerPolicy: "no-referrer-when-downgrade", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
   method: 'POST',
   headers: {
     'Content-Type': 'application/json'
@@ -90,14 +90,14 @@ const json ='https://comments.qucu.ru/'+`${importantBag.id}`;
 // amir248.github.io/
 async function comments(){
   await fetch(json,{
-    origin: "https://comments.qucu.ru/",
+    origin: "https://qucu.ru/",
     method: "POST",
     headers: {
     'Content-Type': 'application/json; charset=UTF-8'
   },
   // body: undefined,
-    referrer: "https://comments.qucu.ru/",
-    referrerPolicy: "origin-when-cross-origin",
+    referrer: "https://qucu.ru/",
+    referrerPolicy: "no-referrer-when-downgrade",
     mode:"cors", //CORS - разрешены политикой cors
     credentials: "omit",
     cache: "no-store",
