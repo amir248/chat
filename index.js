@@ -11,12 +11,12 @@ const fs = require('node:fs');
 //******************************************************************************************************************
 // ----------------------------BOX comments system------------
 // *******************************************************************************************************************
-const registerUrl=['https://amir248.github.io/chat/','https://comments.qucu.ru','https://qucu.ru','http://192.168.1.104:80/','http://192.168.1.103:3000/','https://amir248.github.io','http://localhost'];
+const registerUrl=['88.204.56.164:443','https://amir248.github.io/chat/','https://comments.qucu.ru','https://qucu.ru','http://192.168.1.103:3000/','https://amir248.github.io','http://localhost'];
 // app.options('*', cors());
 app.use(cors({
   origin: registerUrl,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  // preflightContinue: false,
+  preflightContinue: false,
   optionsSuccessStatus: 204
 }));
 const importantBag={}
@@ -319,7 +319,7 @@ console.log(fileOnPathTwo+" <---fileOnPathTwo 476");
 
     //if you specify the console.log('') prints messages every second
 
-    // console.log(importantBag.id+'___BAG-ID');
+    console.log(importantBag.id+'___BAG-ID '+ importantBag.pathname);
     // console.log(request.body.site.hostname);
     // console.log(request.body.site.pathname);
     // console.log(importantBag.site+'___________7779');

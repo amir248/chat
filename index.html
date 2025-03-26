@@ -30,9 +30,9 @@
       const url ='https://comments.qucu.ru/allow-cors';
       async function goComments(){
         await fetch(url,{
-          origin:site.origin,
+          // origin:site.origin,
           method: "GET",
-          referrer: site.referrer,
+          // referrer: site.referrer,
           referrerPolicy: "no-referrer-when-downgrade",
           mode:"cors",
           credentials: "omit",

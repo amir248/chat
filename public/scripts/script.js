@@ -90,13 +90,13 @@ const json ='https://comments.qucu.ru/'+`${importantBag.id}`;
 // amir248.github.io/
 async function comments(){
   await fetch(json,{
-    origin: "https://qucu.ru/",
+    // origin: "https://qucu.ru/",
     method: "POST",
     headers: {
     'Content-Type': 'application/json; charset=UTF-8'
   },
   // body: undefined,
-    referrer: "https://qucu.ru/",
+    // referrer: "https://qucu.ru/",
     referrerPolicy: "no-referrer-when-downgrade",
     mode:"cors", //CORS - разрешены политикой cors
     credentials: "omit",
