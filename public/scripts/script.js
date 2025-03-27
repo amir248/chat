@@ -97,7 +97,7 @@ async function comments(){
   },
   // body: undefined,
     // referrer: "https://qucu.ru/",
-    referrerPolicy: "no-referrer-when-downgrade",
+    referrerPolicy: "origin",
     mode:"cors", //CORS - разрешены политикой cors
     credentials: "omit",
     cache: "no-store",

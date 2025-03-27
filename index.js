@@ -13,11 +13,20 @@ const fs = require('node:fs');
 // *******************************************************************************************************************
 const registerUrl=['88.204.56.164:443','https://amir248.github.io/chat/','https://comments.qucu.ru','https://qucu.ru','http://192.168.1.103:3000/','https://amir248.github.io','http://localhost'];
 // app.options('*', cors());
+
+// app.use(function (request, response, next) {
+//   response.setHeader('Content-Type', 'application/json');
+//   response.setHeader('Access-Control-Allow-Origin', registerUrl);
+//   response.setHeader('Access-Control-Allow-Methods', 'POST');
+//   response.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+//   response.setHeader('Access-Control-Allow-Credentials', true);
+//   next();
+//   }); 
 app.use(cors({
   origin: registerUrl,
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   preflightContinue: false,
-  optionsSuccessStatus: 204
+  optionsSuccessStatus: 200
 }));
 const importantBag={}
 if(importantBag=={}){
